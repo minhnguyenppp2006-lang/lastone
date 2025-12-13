@@ -12,7 +12,7 @@ GOOGLE_MAPS_API_KEY = "YOUR_GOOGLE_MAPS_API_KEY"
 GEMINI_API_KEY = "YOUR_GEMINI_API_KEY"
 
 genai.configure(api_key=GEMINI_API_KEY)
-ai = genai.GenerativeModel("gemini-1.5-flash")
+ai = genai.GenerativeModel("gemini-flash-latest")
 
 st.set_page_config(page_title="Bus Assistant for Blind", layout="centered")
 st.title("🦯 Trợ lý xe bus cho người khiếm thị")
@@ -155,3 +155,4 @@ if st.session_state.running:
 
 else:
     st.info("Ứng dụng đang chờ. Nhấn Bắt đầu để sử dụng.")
+
