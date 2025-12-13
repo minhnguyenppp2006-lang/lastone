@@ -1,0 +1,7 @@
+streamlit
+requests
+gTTS
+speechrecognition
+pyaudio
+streamlit-js-eval
+google-generativeai
