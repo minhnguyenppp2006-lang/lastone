@@ -9,6 +9,9 @@ import google.generativeai as genai
 
 # ================= CONFIG =================
 
+GOOGLE_MAPS_API_KEY = st.secrets.get("GOOGLE_MAPS_API_KEY") 
+GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
+
 genai.configure(api_key=GEMINI_API_KEY)
 ai = genai.GenerativeModel("gemini-flash-latest")
 
@@ -153,5 +156,6 @@ if st.session_state.running:
 
 else:
     st.info("Ứng dụng đang chờ. Nhấn Bắt đầu để sử dụng.")
+
 
 
