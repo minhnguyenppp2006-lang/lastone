@@ -15,8 +15,8 @@ GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
 genai.configure(api_key=GEMINI_API_KEY)
 ai = genai.GenerativeModel("gemini-flash-latest")
 
-st.set_page_config(page_title="Bus Assistant for Blind", layout="centered")
-st.title("🦯 Trợ lý xe bus cho người khiếm thị")
+st.set_page_config(page_title="BusMate", layout="centered")
+st.title("BusMate - Bạn đồng hành xe bus")
 
 # ================= STATE =================
 if "running" not in st.session_state:
@@ -156,6 +156,7 @@ if st.session_state.running:
 
 else:
     st.info("Ứng dụng đang chờ. Nhấn Bắt đầu để sử dụng.")
+
 
 
 
